@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamd Zaid | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">Hamd<span>Zaid</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="themeToggle">🌙</button>
+</nav>
+
+<!-- Hero -->
+<section id="home">
+  <h1>Hi, I'm <span class="highlight">Hamd Zaid</span></h1>
+  <h2><span id="typing"></span><span class="cursor">|</span></h2>
+  <p>Web Developer | JavaScript Enthusiast | Tech Lover</p>
+  <a href="#contact" class="btn">Hire Me</a>
+  <a href="#" class="btn outline" id="downloadCV">Download CV</a>
+</section>
+
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>I'm Hamd Zaid, a passionate web developer who loves building
+     modern, responsive websites using HTML, CSS and JavaScript.
+     I enjoy turning ideas into real digital experiences.</p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">HTML <div class="bar"><div style="width:95%"></div></div></div>
+    <div class="skill">CSS <div class="bar"><div style="width:90%"></div></div></div>
+    <div class="skill">JavaScript <div class="bar"><div style="width:85%"></div></div></div>
+    <div class="skill">React <div class="bar"><div style="width:75%"></div></div></div>
+    <div class="skill">Git & GitHub <div class="bar"><div style="width:80%"></div></div></div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="card"><h3>To-Do App</h3><p>Task manager with local storage.</p></div>
+    <div class="card"><h3>Weather App</h3><p>Live weather using an API.</p></div>
+    <div class="card"><h3>Calculator</h3><p>JS-powered simple calculator.</p></div>
+    <div class="card"><h3>Landing Page</h3><p>Fully responsive product page.</p></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+  <p id="formMsg"></p>
+</section>
+
+<footer>© 2025 Hamd Zaid | Made with ❤️</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

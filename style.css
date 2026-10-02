@@ -1,0 +1,39 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background: #0f172a; color: #e2e8f0; scroll-behavior: smooth; }
+
+nav { display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 8%; position: sticky; top: 0; background: rgba(15,23,42,.95); z-index: 10; }
+.logo { font-weight: 800; font-size: 1.5rem; }
+.logo span { color: #38bdf8; }
+.nav-links { display: flex; gap: 25px; list-style: none; }
+.nav-links a { color: #e2e8f0; text-decoration: none; }
+.nav-links a:hover { color: #38bdf8; }
+
+section { padding: 80px 10%; }
+#home { text-align: center; min-height: 90vh; display: flex;
+  flex-direction: column; justify-content: center; }
+.highlight { color: #38bdf8; }
+#typing { color: #38bdf8; font-weight: 600; }
+.cursor { animation: blink .7s infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.btn { display: inline-block; margin: 10px; padding: 12px 30px; background: #38bdf8;
+  color: #0f172a; border-radius: 30px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; }
+.btn.outline { background: transparent; color: #38bdf8; border: 2px solid #38bdf8; }
+.btn:hover { transform: translateY(-3px); transition: .3s; }
+
+.skills-grid, .projects-grid { display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.skill { background: #1e293b; padding: 20px; border-radius: 12px; }
+.bar { background: #0f172a; height: 10px; border-radius: 5px; margin-top: 10px; }
+.bar div { background: #38bdf8; height: 100%; border-radius: 5px; }
+
+.card { background: #1e293b; padding: 25px; border-radius: 12px; transition: .3s; }
+.card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(56,189,248,.2); }
+
+#contact form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; }
+input, textarea { padding: 12px; border-radius: 8px; border: none; background: #1e293b; color: #fff; }
+footer { text-align: center; padding: 20px; background: #1e293b; }
+
+body.light { background: #f1f5f9; color: #0f172a; }
+body.light .skill, body.light .card, body.light nav { background: #fff; color: #0f172a; }
